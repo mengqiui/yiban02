@@ -1,0 +1,58 @@
+$indent2:2rem;
+
+@mixin borderL($bgcolor) {
+  border-left: 2px solid $bgcolor;
+}
+
+.tel-code{
+  top: 0px;
+  right: 0px;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+}
+
+$body-bg: #191935!important;
+$color: #100f0c;
+$bg-navbar: rgba(0, 0, 34, .7)!important;
+$line-gradient: linear-gradient(left, #eedd22, #00ff77);
+$placeImg: rgba(255, 255, 255, 0.7) !important;
+
+
+.main-bg{background-color: $body-bg;}
+.text-line{border-color:#39395a;}
+body{color:#fff!important;}
+
+.text-gradient{ background: linear-gradient(to right, #eedd22, #00ff77); -webkit-background-clip: text; background-clip: text; color: transparent;}
+
+.h-650{min-height: 650px!important;}
+.w-1200{width: 1200px!important;}
+.ml-20{margin-left: 20px!important;}
+.mr-20{margin-right: 20px!important;}
+.mt-20{margin-top: 20px!important;}
+.mb-20{margin-bottom: 20px!important;}
+.pt-100{padding-top:100px!important;}
+
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .5s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(10px);
+}
